@@ -1,7 +1,3 @@
 # Description 
 
-Starting website project. Update to follow.
-
-## Project
-
-Testing
+Personal website project. Idea is to create website for myself and use git while doing so. 
