@@ -1,114 +1,82 @@
+/* Color palette:
+    #000000
+    #003e3e
+    #007c7c
+    #00baba
+    #00f8f8 */
+
 * {
     box-sizing: border-box;
-    text-align: center;
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
     font-family: Verdana, sans-serif;
 }
+
+body {
+    background-color: #003e3e;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
 header {
     text-align: center;
     padding: 40px;
     background-color: black;
 }
+
+.background-photo {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url(../img/metsa-1.jpg);
+    background-size: cover; /* Covers whole sight of the content */
+    background-position: center; /* Keeps center of the image always center */
+}
+
 span {
-    color: aqua;
-}
-body {
-    background-color: #0C2D48;
-    color: aliceblue;
-    margin: 0;
-    padding: 0;
+    color: #00f8f8;
 }
 
-.navigation ul {
-    list-style: none;
-    background: #000000;
-    padding: 0;
+ul.navigation {
+    list-style-type: none;
     margin: 0;
+    padding: 8px;
     overflow: hidden;
-}
-
-.navigation li {
-    display: inline-block;
-
-}
-
-.navigation-list {
-    box-shadow: 0px 10px 15px rgb(0, 0, 0, 50%);
-}
-.navigation a {
-    text-decoration: none;
-    color:#fff;
-    display: block;
-    padding: 20px 20px;
-    font-size: 15px;
+    background-color: #333;
     text-align: center;
-    width: 200px;
+  }
+  
+  ul.navigation li {
+    display: inline-block;
+    padding: 2px;
 }
-
-.navigation a:hover{
-    background-color: aqua;
-    color: #000000;
+  
+  ul.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.navigation li a:hover {
+    background-color: #111;
+    border-radius: 30px;
 }
-@media screen and (max-width: 600px) {
-    .navigation li{float: none;}
-}
- 
-article {
-    margin-top: 100px;
-}
-.gallery-row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 100px;
-}
-
-.gallery-column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-    
-.gallery-column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    border-radius: 2%;
-    border-width: 2px;
+  
+  ul.navigation li a.active {
     border-style: solid;
-    border-color: rgb(218, 218, 218);
+    border-radius: 30px;
+    border-color: #00f8f8;
+    border-width: 2px;
 }
-
-@media (max-width: 1000px) {
-    .gallery-column {
-        flex: 33.3%;
-        max-width: 33.3%;
-    }
-    .gallery-row {
-        padding: 0 25px;
-    }
-}
-@media (max-width: 800px) {
-    .gallery-column {
-        flex: 50%;
-        max-width: 50%;
-    }
-    .gallery-row {
-        padding: 0 10px;
-    }
-}
-
-@media (max-width: 600px) {
-    .gallery-column {
-        flex: 100%;
-        max-width: 100%;
-    }
-    .gallery-row {
-        padding: 0 4px;
-    }
-    header {
-        padding: 10px;
-    }
+  
+  
+  @media screen and (max-width: 600px) { 
+    ul.navigation, ul.navigation li {
+      float: none;
+  }
 }
 
 .intro {
@@ -116,24 +84,22 @@ article {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    line-height: 1.6;
+    max-width: 800px;
+    margin-top: 10px;
 }
-h1 {
+
+.intro h1 {
     font-size: 60px;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
 
-.intro {
-    line-height: 1.6;
-}
-
-.back-photo {
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/metsa-1.jpg);
-    background-size: cover;
-    background-position: center;
-}
 footer {
-    background-color: black;
-}
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  
